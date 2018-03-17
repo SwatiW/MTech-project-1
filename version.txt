@@ -1,0 +1,2639 @@
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+release_major = 2
+release_minor = 5
+release_patch = 0
+release_so_abi_rev = 4
+
+# These are set by the distribution script
+release_vc_rev = None
+release_datestamp = 0
+release_type = 'unreleased'
+
+
+char* get_Next_Block_From_File(FILE *fp, int seek_offset, int blockSize)
+{
+    // Open file
+    // lseek to seek_offset
+
+    len = blockSize / 8;
+    bit_pos = blockSize % 8;
+
+    for (i=0; i<len; i++) {
+        copy_from_file_to_local_buffer_byte_by_byte();
+    }
+
+    if (bit_pos) {
+        byte[i] <<= (8 - bit_pos);
+        append_byte_to_local_buffer();
+    }
+
+    return local_buffer;
+}
+
+
+
+
+123456
