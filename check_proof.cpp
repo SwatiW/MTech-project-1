@@ -4,10 +4,15 @@
 #include<gmp.h>
 #include<time.h>
 
+#include "sha1.cpp"
+using namespace std;
+
+int HASH(mpz_t to_be_hashed,mpz_t hash_val);
+
 int main(){
 
-  mpz_t temp;
-  mpz_inits(temp,NULL);
+  mpz_t temp,hashed_val;
+  mpz_inits(temp,hashed_val,NULL);
   int j=0,ar=mpz_get_ui(c);
   int i[ar],a[ar],W[ar],success=0;
   char *V,*I,*w;
@@ -38,7 +43,8 @@ int main(){
   }
 
   mpz_powm(T,T,s,n);
-  if(mpz_cmp(HASH(T),rho)==0)
+  HASH(T,hashed_val);
+  if(mpz_cmp(hashed_val,rho)==0)
     success=1;
 
   // return success;

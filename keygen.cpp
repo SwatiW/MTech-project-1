@@ -10,7 +10,7 @@
 #include<iostream>
 #include<gmp.h>
 #include<time.h>
-#include "random_number.cpp"
+#include "random_num.cpp"
 int gen_random_no(int out,int bit_cnt,mpz_t max_no,mpz_t rand_no);
 
 using namespace std;
@@ -49,7 +49,7 @@ int main()
 
   // mpz_urandomb(v,r_state,128);
   gen_random_no(1,128,r_max,v);
-  gmp_printf("p -> %Zd\nq -> %Zd\nn -> %Zd\ne -> %Zd\nd -> %Zd\nv -> %Zd",p,q,n,e,d,v);
+  gmp_printf("p -> %Zd\nq -> %Zd\nn -> %Zd\ne -> %Zd\nd -> %Zd\nv -> %Zd\n",p,q,n,e,d,v);
 
   return 0;
 }

@@ -59,7 +59,7 @@ int main()
       mpz_set(blocks[t1++],temp);
       s.clear();
     }
-
+    cout<<"index\tblock\n";
     for (i = 0; i < mpz_get_ui(f); i++) {
       cout<<i<<"\t";
       gmp_printf("%Zd\n",blocks[i]);

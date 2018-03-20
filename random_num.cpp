@@ -2,10 +2,10 @@
 // get bit_cnt || max_no from other programs to generate a random no.
 // the program returns rand_no
 
-// #include "all_functions.h"
-#include<iostream>
-#include<gmp.h>
-#include<time.h>
+// // #include "all_functions.h"
+// #include<iostream>
+// #include<gmp.h>
+// #include<time.h>
 
 int gen_random_no(int out,int bit_cnt,mpz_t max_no,mpz_t rand_no)
 {

@@ -11,14 +11,16 @@
 int main(){
 
   //get the secret v from keygen
-
-  mpz_t f,*W,i;
-  mpz_inits(t,i,NULL);
+  int j=0;
+  mpz_t f,*W,*T;
+  mpz_inits(,NULL);
   W=(mpz_t *) malloc(f*sizeof(mpz_t));
+  T=(mpz_t *) malloc(f*sizeof(mpz_t));
 
-  for(mpz_set_ui(i,0),mpz_cmp_ui(i,f)<0;mpz_set(i,i+1)){
-    W[i]=generate_w(v,i);
-    generate_tag(i,W[i]);
+  while(mpz_cmp_ui(f,j)>0){
+    mpz_set(W[j],generate_w());
+    mpz_set(T[j],generate_tag());                //compute coefficients (hmac)
+    j++;
   }
   return 0;
 }
@@ -50,17 +52,16 @@ mpz_t generate_w(mpz_t v,mpz_t i){
 
 
 mpz_t generate_tag(mpz_t i,mpz_t W){
-  mpz_t G,T;
-  mpz_init(G);
+  mpz_t G,t,temp;
+  mpz_init(G,t,temp);
 
   //  G = g^i
-  mpz_powm (G,g,i,n);
+  mpz_powm (G,g,b[itr],n);
+  mpz_set(temp,hash(W[itr]));   // hash => h(W(i))
 
-  // hash = h(W(i))
 
-
-  //  T(i,b(i))= ( hash * G )^d mod n
-  mpz_mul(T,hash,G);
-  mpz_powm(T,T,d,n);
+  //  T(i,b(i))= ( temp * G )^d mod n
+  mpz_mul(t,temp,G);
+  mpz_powm(t,t,d,n);
 
 }

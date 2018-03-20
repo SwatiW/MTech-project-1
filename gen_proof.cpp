@@ -1,12 +1,19 @@
 #include<iostream>
 #include<gmp.h>
 #include<time.h>
+#include<openssl/evp.h>
+#include<stdio.h>
+#include<string.h>
+
+#include "sha1.cpp"
 using namespace std;
 
+int HASH(mpz_t to_be_hashed,mpz_t hash_val);
+
 int main(){
-  mpz_t T,temp,ex,rho;
+  mpz_t T,temp,ex,rho,hashed_val;
   int j=0,itr,i[mpz_get_ui(c)],a[mpz_get_ui(c)];
-  mpz_inits(T,temp,ex,rho,NULL);
+  mpz_inits(T,temp,ex,rho,hashed_val,NULL);
   // for (itr = 0; itr < mpz_get_ui(c); itr++) {
   //   mpz_inits(i[itr],a[itr],NULL);
   // }
@@ -31,7 +38,8 @@ int main(){
   }
 
   mpz_powm(temp,gs,ex,n);
-  mpz_set(rho,HASH(temp));
+  HASH(temp,hashed_val);
+  mpz_set(rho,hashed_val);
 
   //  (T,rho) is the proof generated
 
