@@ -45,3 +45,7 @@ int main(){
 
   return 0;
 }
+
+
+
+// k1,k2 (mpz_t format)=> get from gen_challenge.cpp
