@@ -59,6 +59,13 @@ int main(){
     mpz_add_ui(j,j,1);
     // gmp_printf("%Zd\n",W[i-1]);
   }
+  i=0;
+  while(mpz_cmp_ui(f,i)>0){
+
+    gmp_printf("%d\t%Zd\t%Zd\n",i,b[i],T[i]);
+    i++;
+
+  }
   return 0;
 }
 

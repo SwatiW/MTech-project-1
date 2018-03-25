@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    FILE *fp=fopen("t1.txt", "r");;
+    FILE *fp=fopen("t1.txt", "r");
     char ch;
     vector<string> blocks_str;
     // vector<mpz_t> blocks;
@@ -31,7 +31,7 @@ int main()
     mpz_set_ui(F,str.length());
     mpz_cdiv_q(f,F,b_size);                      // no of total blocks
 
-    gmp_printf("b_size -> %Zd\nF -> %Zd\nf -> %Zd\n",b_size,F,f);
+    // gmp_printf("b_size -> %Zd\nF -> %Zd\nf -> %Zd\n",b_size,F,f);
     mpz_t blocks[mpz_get_ui(f)] ;
     for (i = 0; i < mpz_get_ui(f); i++) {
       mpz_init(blocks[i]);
@@ -59,10 +59,10 @@ int main()
       mpz_set(blocks[t1++],temp);
       s.clear();
     }
-    cout<<"index\tblock\n";
+    // cout<<"index\tblock\n";
     for (i = 0; i < mpz_get_ui(f); i++) {
-      cout<<i<<"\t";
-      gmp_printf("%Zd\n",blocks[i]);
+      // cout<<i<<"\t";
+      gmp_printf("%d %Zd\n",i,blocks[i]);
     }
 
     fclose(fp);                             // closing the file pointer

@@ -10,6 +10,8 @@
 #include<iostream>
 #include<gmp.h>
 #include<time.h>
+// #include<set>
+
 #include "random_num.cpp"
 int gen_random_no(int out,int bit_cnt,mpz_t max_no,mpz_t rand_no);
 
@@ -17,17 +19,20 @@ using namespace std;
 
 int main()
 {
-  mpz_t p,q,n,phi,_p,_q,e,d,v,gcd,r_max;
-  mpz_inits(p,q,n,phi,_p,_q,e,d,v,gcd,r_max,NULL);
-
+  mpz_t p,q,pd,qd,n,phi,_p,_q,e,d,v,gcd,r_max;
+  mpz_inits(p,q,pd,qd,n,phi,_p,_q,e,d,v,gcd,r_max,NULL);
+  // set<mpz_t> mul_grp;
   // p and q -> primes -> size 512 bits
   mpz_set_ui(r_max,0);
   gen_random_no(1,512,r_max,p);
   gen_random_no(1,512,r_max,q);
 
-  mpz_nextprime(p,p);
-  mpz_nextprime(q,q);
-
+  mpz_nextprime(pd,p);
+  mpz_nextprime(qd,q);
+  mpz_mul_ui(p,pd,2);
+  mpz_mul_ui(q,qd,2);
+  mpz_add_ui(p,p,1);
+  mpz_add_ui(q,q,1);
   // n=p*q -> size 1024 bits
   mpz_mul(n,p,q);
 
@@ -49,7 +54,10 @@ int main()
 
   // mpz_urandomb(v,r_state,128);
   gen_random_no(1,128,r_max,v);
-  gmp_printf("p -> %Zd\nq -> %Zd\nn -> %Zd\ne -> %Zd\nd -> %Zd\nv -> %Zd\n",p,q,n,e,d,v);
+  // gmp_printf("p -> %Zd\nq -> %Zd\nn -> %Zd\ne -> %Zd\nd -> %Zd\nv -> %Zd\n",p,q,n,e,d,v);
+
+  gmp_printf("n -> %Zd\ne -> %Zd\nd -> %Zd\nv -> %Zd\n",n,e,d,v);
+
 
   return 0;
 }
