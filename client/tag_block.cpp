@@ -1,4 +1,4 @@
-//tag generation for each file block
+tag generation for each file block
 //  W(i)= v || i
 //  T(i,b(i))= ( h(W(i)) * g^b[i] )^d mod n
 
@@ -12,7 +12,7 @@
 #include<stdio.h>
 #include<openssl/md5.h>
 using namespace std;
-#include "simple_hash.cpp"
+#include "../crypto_funcs/simple_hash.cpp"
 
 
 mpz_t n,v,d,g;
@@ -37,14 +37,13 @@ int main(){
   read_n_v_d();
   fstream block_file;
   string word,filename;
-  filename = "file_blocks_out.txt";
+  filename = "../outputs/file_blocks_out.txt";
   block_file.open(filename.c_str());
   i=0;
   k=0;
   while(block_file >> word){
     if(i%2!=0){
       mpz_set_str(b[k],word.c_str(),10);
-      // gmp_printf("%Zd\t%d\n",b[k],k);
       k++;
     }
     i++;
@@ -57,7 +56,6 @@ int main(){
     generate_tag(T[i],W[i],b[i]);       //compute coefficients (hmac)
     i++;
     mpz_add_ui(j,j,1);
-    // gmp_printf("%Zd\n",W[i-1]);
   }
   i=0;
   while(mpz_cmp_ui(f,i)>0){
@@ -73,7 +71,7 @@ void read_n_v_d(){
   fstream key_file,block_file;
   string word,filename,n_keygen,v_keygen,d_keygen,g_keygen;
   // read values from keygen and file_blocks
-  filename = "key_gen_out.txt";
+  filename = "../outputs/key_gen_out.txt";
   key_file.open(filename.c_str());
   int i=1;
   while (key_file >> word)
@@ -92,9 +90,8 @@ void read_n_v_d(){
   mpz_set_str (g,g_keygen.c_str(),10);
   mpz_set_str (d,d_keygen.c_str(),10);
   mpz_set_str (v,v_keygen.c_str(),10);
-  gmp_printf("\nn - %Zd\nd - %Zd\nv - %Zd\n",n,d,v);
 }
-
+//
 //  W(i)= v || i  --concatenations
 void generate_w(mpz_t i,mpz_t wgen){
   char *V,*I,*w;

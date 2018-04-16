@@ -17,10 +17,10 @@ void hash_func(mpz_t w,mpz_t hash_val){
   msg_to_hash=(char *) malloc(1+msg.length());
   strcpy(msg_to_hash,msg.c_str());
   unsigned char md[16];
-  MD5_CTX c;
-  MD5_Init(&c);
-  MD5_Update(&c,msg_to_hash,strlen(msg_to_hash));
-  MD5_Final(md,&c);
+  MD5_CTX ctx;
+  MD5_Init(&ctx);
+  MD5_Update(&ctx,msg_to_hash,strlen(msg_to_hash));
+  MD5_Final(md,&ctx);
   for (i = 0; i < sizeof(md); i++){
     if((int)md[i]>=100)
       mpz_set_ui(r,1000);

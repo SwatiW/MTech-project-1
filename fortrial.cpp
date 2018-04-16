@@ -1,124 +1,86 @@
-//tag generation for each file block
-//  W(i)= v || i
-//  T(i,b(i))= ( h(W(i)) * g^b[i] )^d mod n
-
-// v size = 128 bits
-
-#include<gmp.h>
+#include <openssl/conf.h>
+#include <openssl/evp.h>
+#include <openssl/err.h>
 #include<iostream>
-#include<time.h>
-#include<string.h>
-#include<fstream>
-#include<stdio.h>
-#include<openssl/md5.h>
+#include <string.h>
+#include<gmp.h>
 using namespace std;
-#include "simple_hash.cpp"
 
 
-mpz_t n,v,d,g;
-void read_n_v_d();
-void generate_w(mpz_t i,mpz_t wgen);
-void generate_tag(mpz_t tag_gen,mpz_t wgen,mpz_t block);
-void hash_func(mpz_t w,mpz_t hash_val);
+void handleErrors(void)
+{
+  ERR_print_errors_fp(stderr);
+  abort();
+}
 
-int main(){
+int encrypt(unsigned char *plaintext, int plaintext_len, unsigned char *key,unsigned char *iv, unsigned char *ciphertext)
+{
+  EVP_CIPHER_CTX *ctx;
+  int len,ciphertext_len;
 
-  mpz_t f,j;
-  mpz_inits(g,f,j,n,v,d,NULL);
-  mpz_set_ui(f,25);
-  mpz_t b[mpz_get_ui(f)] ;
-  int i,k;
-  mpz_t W[mpz_get_ui(f)],T[mpz_get_ui(f)];
-  for (i = 0; i < mpz_get_ui(f); i++) {
-    mpz_init(W[i]);
-    mpz_init(T[i]);
-    mpz_init(b[i]);
-  }
-  read_n_v_d();
-  fstream block_file;
-  string word,filename;
-  filename = "file_blocks_out.txt";
-  block_file.open(filename.c_str());
-  i=0;
-  k=0;
-  while(block_file >> word){
-    if(i%2!=0){
-      mpz_set_str(b[k],word.c_str(),10);
-      // gmp_printf("%Zd\t%d\n",b[k],k);
-      k++;
+  if(!(ctx = EVP_CIPHER_CTX_new()))
+    handleErrors();
+
+  if(1 != EVP_EncryptInit_ex(ctx, EVP_aes_256_cbc(), NULL, key, iv))
+    handleErrors();
+
+  if(1 != EVP_EncryptUpdate(ctx, ciphertext, &len, plaintext, plaintext_len))
+    handleErrors();
+  ciphertext_len = len;
+
+  if(1 != EVP_EncryptFinal_ex(ctx, ciphertext + len, &len))
+    handleErrors();
+  ciphertext_len += len;
+
+  EVP_CIPHER_CTX_free(ctx);
+
+  return ciphertext_len;
+}
+
+int main()
+{
+  // cout<<"hrer";
+  mpz_t i,keytemp,r;
+  int j=3;
+  mpz_inits(i,keytemp,r,NULL);
+  mpz_set_ui(keytemp,32766);
+  char *key=mpz_get_str(NULL,10,keytemp);
+  cout<<"here 1\n";
+  // unsigned char *key = (unsigned char *)"01234567890123456789012345678901";   /* A 256 bit key */
+  unsigned char *iv = (unsigned char *)"0123456789012345"; /* A 128 bit key */
+  // unsigned char *plaintext =(unsigned char *)"The quick brown fox jumps over the lazy dog";
+
+  string te=to_string(j);
+  const char *plaintext = te.c_str();
+  cout<<"here 2\n";
+  unsigned char *ciphertext;
+
+  int  ciphertext_len,k;
+
+  // (unsigned char *plaintext, int plaintext_len, unsigned char *key,unsigned char *iv, unsigned char *cip
+  ciphertext_len = encrypt ((unsigned char*)plaintext, strlen(plaintext),(unsigned char*) key, iv,ciphertext);
+  cout<<"here 3\n"<<ciphertext_len<<endl<<ciphertext<<endl;
+  for (k = 0;k < ciphertext_len; k++){
+    cout<<"here 4\n";
+    if((int)ciphertext[k]>=100)
+    {
+      cout<<"here 5\n";
+      // mpz_clear(r);
+      mpz_init(r);
+      mpz_set_ui(r,1000);
+      // mpz_clear(r);
+      cout<<"here 6\n";
     }
-    i++;
+    else{
+      cout<<"here 7\n";
+      // mpz_set_ui(r,100);
+      // mpz_clear(r);
+      mpz_init(r);
+      mpz_set_ui(r,100);
+      
+    }
+    mpz_mul(i,i,r);
+    mpz_add_ui(i,i,(int)ciphertext[k]);
   }
-
-  i=0;
-  while(mpz_cmp(f,j)>0){
-    generate_w(j,W[i]);
-
-    generate_tag(T[i],W[i],b[i]);       //compute coefficients (hmac)
-    i++;
-    mpz_add_ui(j,j,1);
-    // gmp_printf("%Zd\n",W[i-1]);
-  }
-  return 0;
-}
-
-void read_n_v_d(){
-  fstream key_file,block_file;
-  string word,filename,n_keygen,v_keygen,d_keygen,g_keygen;
-  // read values from keygen and file_blocks
-  filename = "key_gen_out.txt";
-  key_file.open(filename.c_str());
-  int i=1;
-  while (key_file >> word)
-  {
-      if(i%12==0)
-        v_keygen=word;
-      else if(i%9==0)
-        d_keygen=word;
-      else if(i%6==0)
-        g_keygen=word;
-      else if(i%3==0)
-        n_keygen=word;
-      i++;
-  }
-  mpz_set_str (n,n_keygen.c_str(),10);
-  mpz_set_str (g,g_keygen.c_str(),10);
-  mpz_set_str (d,d_keygen.c_str(),10);
-  mpz_set_str (v,v_keygen.c_str(),10);
-  gmp_printf("\nn - %Zd\nd - %Zd\nv - %Zd\n",n,d,v);
-}
-
-//  W(i)= v || i  --concatenations
-void generate_w(mpz_t i,mpz_t wgen){
-  char *V,*I,*w;
-
-  V=mpz_get_str (NULL,10,v);   //Convert v to a string of digits in base 10.
-  I=mpz_get_str (NULL,10,i);
-  w=(char *) malloc(1+strlen(V)+strlen(I));
-  strcpy(w,V);
-  strcat(w,I);      //concatenate
-
-  mpz_set_str(wgen,w,10); //Set the value of W[i] from w, a null-terminated C string in base base. White space is allowed
-                          //in the string, and is simply ignored.
-
-  free(V);
-  free(I);
-  free(w);
-
-
-}
-
-// //  T(i,b(i))= ( h(W(i)) * g^b[i] )^d mod n
-void generate_tag(mpz_t tag_gen,mpz_t wgen,mpz_t block){
-  mpz_t G,temp;
-  mpz_inits(G,temp,NULL);
-
-  // G = g^b[i]
-  mpz_powm (G,g,block,n);
-  hash_func(wgen,temp);
-  //
-  // //  T(i,b(i))= ( temp * G )^d mod n
-  mpz_mul(tag_gen,temp,G);
-  mpz_powm(tag_gen,tag_gen,d,n);
 
 }

@@ -1,5 +1,3 @@
-
-
 void HASH(mpz_t to_be_hashed,mpz_t hash_val){
   string msg;
   EVP_MD_CTX *ctx;
@@ -12,14 +10,14 @@ void HASH(mpz_t to_be_hashed,mpz_t hash_val){
   while(mpz_cmp_ui(temp,0)!=0){
     mpz_fdiv_qr_ui(temp,r,temp,100);
     r_int=mpz_get_ui(r);
-    cout<<r_int<<" - ";
+    // cout<<r_int<<" - ";
     msg+=(char)r_int;
     // cout<<msg<<endl;
     // msg+=to_string(r);
   }
 
   char *msg_to_hash;
-  cout<<"msg in c string => "<<msg<<endl;
+  // cout<<"msg in c string => "<<msg<<endl;
   msg_to_hash=(char *) malloc(1+msg.length());
   strcpy(msg_to_hash,msg.c_str());
 
@@ -39,7 +37,7 @@ void HASH(mpz_t to_be_hashed,mpz_t hash_val){
     mpz_mul(hash_val,hash_val,r);
     mpz_add_ui(hash_val,hash_val,(int)md_val[i]);
   }
-  gmp_printf("%Zd\n%Zd\n",to_be_hashed,hash_val);
+  // gmp_printf("%Zd\n%Zd\n",to_be_hashed,hash_val);
 }
 
 
