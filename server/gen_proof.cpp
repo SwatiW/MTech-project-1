@@ -15,9 +15,6 @@ using namespace std;
 mpz_t n,c,k1,k2,gs,b[25],tag[25];
 void read_n_c_k1_k2();
 void read_tag_block();
-void HASH(mpz_t to_be_hashed,mpz_t hash_val);
-void PRF(mpz_t a,mpz_t key,int j);
-void PRP(mpz_t i,mpz_t key,int j);
 
 int main(){
   mpz_t T,temp,ex,rho,hashed_val,f;
@@ -61,7 +58,7 @@ int main(){
   mpz_set(rho,hashed_val);
 
    // (T,rho) is the proof generated
-  gmp_printf("T %Zd\nrho %Zd\n",T,rho);
+  gmp_printf("T - %Zd\nrho - %Zd\n",T,rho);
 
   return 0;
 }

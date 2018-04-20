@@ -4,7 +4,6 @@
 #include<gmp.h>
 #include<time.h>
 #include<string.h>
-//#include<openssl.h>
 #include<openssl/md5.h>
 #include<openssl/evp.h>
 #include<openssl/hmac.h>
@@ -18,10 +17,6 @@ using namespace std;
 #include "../crypto_funcs/aes.cpp"
 #include "../crypto_funcs/simple_hash.cpp"
 #include "../crypto_funcs/hmac.cpp"
-void HASH(mpz_t to_be_hashed,mpz_t hash_val);
-void hash_func(int w,mpz_t hash_val);
-void PRF(mpz_t a,mpz_t key,int j);
-void PRP(mpz_t i,mpz_t key,int j);
 
 mpz_t n,c,k1,k2,v,s,e,g,T,rho;
 
@@ -74,10 +69,10 @@ int main(){
     j++;
   }
   //
-  gmp_printf("%Zd\n",T);
+  gmp_printf("T - %Zd\n",T);
   mpz_powm(T,T,s,n);
   HASH(T,hashed_val);
-  gmp_printf("%Zd\n%Zd\n",hashed_val,rho);
+  gmp_printf("hashed val - %Zd\nrho - %Zd\n",hashed_val,rho);
   if(mpz_cmp(hashed_val,rho)==0)
     success=1;
   cout<<endl<<success;

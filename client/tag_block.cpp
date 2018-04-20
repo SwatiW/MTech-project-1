@@ -1,4 +1,4 @@
-tag generation for each file block
+// tag generation for each file block
 //  W(i)= v || i
 //  T(i,b(i))= ( h(W(i)) * g^b[i] )^d mod n
 
@@ -19,7 +19,6 @@ mpz_t n,v,d,g;
 void read_n_v_d();
 void generate_w(mpz_t i,mpz_t wgen);
 void generate_tag(mpz_t tag_gen,mpz_t wgen,mpz_t block);
-void hash_func(mpz_t w,mpz_t hash_val);
 
 int main(){
 
@@ -58,6 +57,7 @@ int main(){
     mpz_add_ui(j,j,1);
   }
   i=0;
+  gmp_printf("index\tblock\ttag\n");
   while(mpz_cmp_ui(f,i)>0){
 
     gmp_printf("%d\t%Zd\t%Zd\n",i,b[i],T[i]);
