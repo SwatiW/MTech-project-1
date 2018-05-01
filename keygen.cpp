@@ -16,8 +16,8 @@ using namespace std;
 
 int main()
 {
-  mpz_t p,q,pd,qd,n,phi,_p,_q,e,d,v,gcd,r_max;
-  mpz_inits(p,q,pd,qd,n,phi,_p,_q,e,d,v,gcd,r_max,NULL);
+  mpz_t p,q,pd,qd,n,phi,_p,_q,e,d,v,gcd,r_max,iv_temp;
+  mpz_inits(p,q,pd,qd,n,phi,_p,_q,e,d,v,gcd,r_max,iv_temp,NULL);
   // set<mpz_t> mul_grp;
   // p and q -> primes -> size 512 bits
   unsigned long int seed;
@@ -29,7 +29,7 @@ int main()
   mpz_set_ui(r_max,0);
   gen_random_no(1,512,r_max,p,r_state);
   gen_random_no(1,512,r_max,q,r_state);
-
+  gen_random_no(1,128,r_max,iv_temp,r_state);
   mpz_nextprime(pd,p);
   mpz_nextprime(qd,q);
   mpz_mul_ui(p,pd,2);
@@ -59,7 +59,7 @@ int main()
   gen_random_no(1,128,r_max,v,r_state);
   // gmp_printf("p -> %Zd\nq -> %Zd\nn -> %Zd\ne -> %Zd\nd -> %Zd\nv -> %Zd\n",p,q,n,e,d,v);
 
-  gmp_printf("n -> %Zd\ne -> %Zd\nd -> %Zd\nv -> %Zd\n",n,e,d,v);
+  gmp_printf("n -> %Zd\ne -> %Zd\nd -> %Zd\nv -> %Zd\niv_temp -> %Zd\n",n,e,d,v,iv_temp);
 
 
   return 0;

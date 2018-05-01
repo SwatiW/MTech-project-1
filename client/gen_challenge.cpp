@@ -56,7 +56,7 @@ void read_n(){
   int i=1;
   while (key_file >> word)
   {
-      if(i%3==0 && i%6!=0 && i%9!=0 && i%12!=0)
+      if(i%3==0 && i%6!=0 && i%9!=0 && i%12!=0 && i%15!=0)
         n_keygen=word;
       i++;
   }

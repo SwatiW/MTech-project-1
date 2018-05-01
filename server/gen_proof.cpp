@@ -9,16 +9,18 @@
 #include<string.h>
 #include<fstream>
 using namespace std;
+
+#include "../random_num.cpp"
 #include "../crypto_funcs/sha1.cpp"
 #include "../crypto_funcs/hmac.cpp"
 #include "../crypto_funcs/aes.cpp"
-mpz_t n,c,k1,k2,gs,b[25],tag[25];
+mpz_t n,c,k1,k2,gs,b[25],tag[25],iv_temp;
 void read_n_c_k1_k2();
 void read_tag_block();
 
 int main(){
   mpz_t T,temp,ex,rho,hashed_val,f;
-  mpz_inits(T,temp,ex,rho,hashed_val,c,k1,k2,n,gs,f,NULL);
+  mpz_inits(T,temp,ex,rho,hashed_val,c,k1,k2,n,gs,f,iv_temp,NULL);
   read_n_c_k1_k2();
   int j=0,jt,itr,te;
   mpz_t i[mpz_get_ui(c)],a[mpz_get_ui(c)];
@@ -29,7 +31,7 @@ int main(){
   j=0;
   // gmp_printf("j\ti\ta\n");
   while(mpz_cmp_ui(c,j)>0){
-    PRP(i[j],k1,j);
+    PRP(i[j],k1,j,iv_temp);
     PRF(a[j],k2,j);
     mpz_mod(i[j],i[j],f);
     mpz_mod(a[j],a[j],f);
@@ -58,7 +60,7 @@ int main(){
   mpz_set(rho,hashed_val);
 
    // (T,rho) is the proof generated
-  gmp_printf("T - %Zd\nrho - %Zd\n",T,rho);
+  // gmp_printf("T - %Zd\nrho - %Zd\n",T,rho);
 
   return 0;
 }
@@ -66,14 +68,16 @@ int main(){
 
 void read_n_c_k1_k2(){
   fstream key_file,key2_file;
-  string word,filename,n_keygen,k1_gen,k2_gen,c_gen,gs_gen;
+  string word,filename,n_keygen,k1_gen,k2_gen,c_gen,gs_gen,iv_temp_gen;
   // read values from keygen and file_blocks
   filename = "../outputs/key_gen_out.txt";
   key_file.open(filename.c_str());
   int i=1;
   while (key_file >> word)
   {
-      if(i%3==0 && i%6!=0 && i%9!=0 && i%12!=0)
+      if(i%15==0)
+        iv_temp_gen=word;
+      else if(i%3==0 && i%6!=0 && i%9!=0 && i%12!=0 )
         n_keygen=word;
       i++;
   }
@@ -82,16 +86,18 @@ void read_n_c_k1_k2(){
   i=1;
   while (key2_file >> word)
   {
+      // cout<<word<<endl;
       if(i%18==0)
         gs_gen=word;
       else if(i%12==0)
         c_gen=word;
       else if(i%6==0)
         k2_gen=word;
-      else if(i%3==0)
+      else if(i%3==0 && i%15!=0 && i%9!=0)
         k1_gen=word;
       i++;
   }
+  mpz_set_str (iv_temp,iv_temp_gen.c_str(),10);
   mpz_set_str (n,n_keygen.c_str(),10);
   mpz_set_str (gs,gs_gen.c_str(),10);
   mpz_set_str (k1,k1_gen.c_str(),10);

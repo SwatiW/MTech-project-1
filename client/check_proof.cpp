@@ -13,19 +13,20 @@
 #include<string.h>
 #include<fstream>
 using namespace std;
+#include "../random_num.cpp"
 #include "../crypto_funcs/sha1.cpp"
 #include "../crypto_funcs/aes.cpp"
 #include "../crypto_funcs/simple_hash.cpp"
 #include "../crypto_funcs/hmac.cpp"
 
-mpz_t n,c,k1,k2,v,s,e,g,T,rho;
+mpz_t n,c,k1,k2,v,s,e,g,T,rho,iv_temp;
 
 void read_all();
 
 int main(){
 
   mpz_t temp,hashed_val,f;
-  mpz_inits(temp,hashed_val,n,s,c,k1,k2,v,e,g,T,rho,f,NULL);
+  mpz_inits(temp,hashed_val,n,s,c,k1,k2,v,e,g,T,rho,f,iv_temp,NULL);
   read_all();
   mpz_set_ui(f,25);
   int j=0,te,ar=mpz_get_ui(c),success=0;
@@ -33,6 +34,7 @@ int main(){
   char *V,*I,*w;
 
   mpz_powm(T,T,e,n);
+  // gmp_printf("%Zd\n",T);
   // while(j<25)
   //   mpz_init(W[j++]);
   // j=0;
@@ -40,10 +42,11 @@ int main(){
     mpz_init(i[j]);
     mpz_init(a[j]);
 
-    PRP(i[j],k1,j);
+    PRP(i[j],k1,j,iv_temp);
     PRF(a[j],k2,j);
     mpz_mod(i[j],i[j],f);
     mpz_mod(a[j],a[j],f);
+    // gmp_printf("%d\t%Zd\t%Zd\n",j,i[j],a[j]);
     // gmp_printf("%Zd\n",)
     V=mpz_get_str (NULL,10,v);          // compute W[] for each block
     I=mpz_get_str (NULL,10,i[j]);
@@ -69,10 +72,10 @@ int main(){
     j++;
   }
   //
-  gmp_printf("T - %Zd\n",T);
+  // gmp_printf("T - %Zd\n",T);
   mpz_powm(T,T,s,n);
   HASH(T,hashed_val);
-  gmp_printf("hashed val - %Zd\nrho - %Zd\n",hashed_val,rho);
+  // gmp_printf("hashed val - %Zd\nrho - %Zd\n",hashed_val,rho);
   if(mpz_cmp(hashed_val,rho)==0)
     success=1;
   cout<<endl<<success;
@@ -82,14 +85,16 @@ int main(){
 
 void read_all(){
   fstream key_file;
-  string word,temp,filename,n_keygen,v_keygen,e_keygen,k1_gen,k2_gen,s_gen,c_gen,g_gen,T_gen,rho_gen;
+  string word,temp,filename,n_keygen,v_keygen,e_keygen,k1_gen,k2_gen,s_gen,c_gen,g_gen,T_gen,rho_gen,iv_temp_gen;
   // read values from keygen and file_blocks
   filename = "../outputs/key_gen_out.txt";
   key_file.open(filename.c_str());
   int i=1;
   while (key_file >> word)
   {
-      if(i%12==0)
+      if(i%15==0)
+        iv_temp_gen=word;
+      else if(i%12==0)
         v_keygen=word;
       else if(i%9==0)
         temp=word;
@@ -127,13 +132,14 @@ void read_all(){
   while (key_file >> word)
   {
     // cout<<word;
-      if(i%4==0)
+      if(i%21==0)
         rho_gen=word;
-      else if(i%2==0)
+      else if(i%18==0)
         T_gen=word;
       i++;
   }
   mpz_set_str (n,n_keygen.c_str(),10);
+  mpz_set_str (iv_temp,iv_temp_gen.c_str(),10);
   // cout<<n_keygen<<endl;
   mpz_set_str (v,v_keygen.c_str(),10);
   mpz_set_str (e,e_keygen.c_str(),10);

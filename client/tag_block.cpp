@@ -82,7 +82,7 @@ void read_n_v_d(){
         d_keygen=word;
       else if(i%6==0)
         g_keygen=word;
-      else if(i%3==0)
+      else if(i%3==0 && i%15!=0)
         n_keygen=word;
       i++;
   }
