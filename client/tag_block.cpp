@@ -51,13 +51,13 @@ int main(){
   i=0;
   while(mpz_cmp(f,j)>0){
     generate_w(j,W[i]);
-
+    // gmp_printf("i - %d\t%Zd\n",i,W[i]);
     generate_tag(T[i],W[i],b[i]);       //compute coefficients (hmac)
     i++;
     mpz_add_ui(j,j,1);
   }
   i=0;
-  gmp_printf("index\tblock\ttag\n");
+  // gmp_printf("index\tblock\ttag\n");
   while(mpz_cmp_ui(f,i)>0){
 
     gmp_printf("%d\t%Zd\t%Zd\n",i,b[i],T[i]);

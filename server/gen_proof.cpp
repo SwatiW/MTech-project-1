@@ -14,43 +14,54 @@ using namespace std;
 #include "../random_num.cpp"
 #include "../crypto_funcs/sha1.cpp"
 #include "../crypto_funcs/hmac.cpp"
-#include "../crypto_funcs/aes.cpp"
-mpz_t n,c,k1,k2,gs,b[25],tag[25],iv_temp1;
-void read_n_c_k1_k2();
+
+mpz_t n,c,k1,k2,gs,b[25],tag[25],iv_temp;
+void read_all();
 void read_tag_block();
 
 int main(){
-  mpz_t T,temp,ex,rho,hashed_val,f,iv_temp;
-  mpz_inits(T,temp,ex,rho,hashed_val,c,k1,k2,n,gs,f,iv_temp,iv_temp1,NULL);
-  read_n_c_k1_k2();
-  mpz_set(iv_temp,iv_temp1);
-  int j=0,jt,itr,te;
-  mpz_t i[mpz_get_ui(c)],a[mpz_get_ui(c)];
-  mpz_set_ui(f,25);
+  mpz_t T,ex,rho,hashed_val,f,tempz;
+  mpz_inits(T,ex,rho,hashed_val,c,k1,k2,n,gs,f,iv_temp,tempz,NULL);
   read_tag_block();
-  j=0;
+  read_all();
+
+  int j=0,jt,itr,te,in=mpz_get_ui(c)+1,temp;
+  mpz_t i[in],a[in];
+  mpz_set_ui(f,25);
   mpz_set_ui(T,1);
-  while(mpz_cmp_ui(c,j)>0){
-    mpz_inits(i[j],a[j],NULL);
-    PRP(i[j],k1,j,iv_temp);
-    PRF(a[j],k2,j);
-    mpz_mod(i[j],i[j],f);
-    mpz_mod(a[j],a[j],f);
-    te=mpz_get_ui(i[j]);
-    // gmp_printf("%d\t%Zd\t%Zd\n",j,i[j],a[j]);
+  fstream file;
+  string word,tempi,filename="../outputs/PRP_out.txt";
+  file.open(filename.c_str());
+  temp=1;
+  j=1;
+  while (file >> word) {
 
-    mpz_powm(temp,tag[te],a[j],n);
-    mpz_mul(T,T,temp);                              //calculate T
-    mpz_mod(T,T,n);
+    if(temp==6){
+      mpz_inits(i[j],a[j],NULL);
+      mpz_set_str (i[j],word.c_str(),10);
+      temp=1;
+      PRF(a[j],k2,j);
+      mpz_mod(a[j],a[j],f);
 
-    mpz_mul(temp,b[te],a[j]);
-    mpz_add(ex,ex,temp);
-    mpz_mod(ex,ex,n);
-    j++;
+      te=mpz_get_ui(i[j]);
+      // gmp_printf("j - %d\t i - %Zd\t a - %Zd\n",j,i[j],a[j]);
+      // gmp_printf("te - %d\ttag - %Zd\n",te,tag[te]);
+      mpz_powm(tempz,tag[te],a[j],n);
+      mpz_mul(T,T,tempz);
+      mpz_mod(T,T,n);
+
+      mpz_mul(tempz,b[te],a[j]);
+      mpz_add(ex,ex,tempz);
+      mpz_mod(ex,ex,n);
+
+      j++;
+    }
+    else
+      temp++;
   }
 
-  mpz_powm(temp,gs,ex,n);
-  HASH(temp,hashed_val);
+  mpz_powm(tempz,gs,ex,n);
+  HASH(tempz,hashed_val);
   mpz_set(rho,hashed_val);
 
    // (T,rho) is the proof generated
@@ -60,7 +71,7 @@ int main(){
 }
 
 
-void read_n_c_k1_k2(){
+void read_all(){
   fstream key_file,key2_file;
   string word,filename,n_keygen,k1_gen,k2_gen,c_gen,gs_gen,iv_temp_gen;
   // read values from keygen and file_blocks
@@ -72,7 +83,6 @@ void read_n_c_k1_k2(){
     // cout<<word<<endl;
       if(i%15==0){
         iv_temp_gen=word;
-        // cout<<word<<endl;
       }
       else if(i%3==0 && i%6!=0 && i%9!=0 && i%12!=0 )
         n_keygen=word;
@@ -94,15 +104,13 @@ void read_n_c_k1_k2(){
         k1_gen=word;
       i++;
   }
-  mpz_set_str (iv_temp1,iv_temp_gen.c_str(),10);
-
+  mpz_set_str (iv_temp,iv_temp_gen.c_str(),10);
   mpz_set_str (n,n_keygen.c_str(),10);
   mpz_set_str (gs,gs_gen.c_str(),10);
   mpz_set_str (k1,k1_gen.c_str(),10);
   mpz_set_str (k2,k2_gen.c_str(),10);
   mpz_set_str (c,c_gen.c_str(),10);
   // gmp_printf("\nn - %Zd\nk1 - %Zd\nk2 - %Zd\nc - %Zd\ngs - %Zd\n",n,k1,k2,c,gs);
-
 }
 
 void read_tag_block(){
@@ -115,6 +123,7 @@ void read_tag_block(){
   int it=0;
   while (!key_file.eof())
   {
+      mpz_inits(b[it],tag[it],NULL);
       key_file >> word;
       key_file >> blocktemp;
       mpz_set_str(b[it],blocktemp.c_str(),10);
